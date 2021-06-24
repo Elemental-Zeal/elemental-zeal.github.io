@@ -1,0 +1,90 @@
+/* If screen is wider than 1000px*/
+@media screen and (min-width: 1000px) 
+{
+    #socialMedia01
+    {
+        width: 56px;
+        height: 56px;
+        background: #FF8080;
+        position: absolute;
+        right: 10%;
+        top: 0px;
+        box-shadow: 1px 1px 3px #528990;
+        border: 2px solid white;
+        border-top: none;
+    }
+
+    #socialMedia02
+    {
+        width: 56px;
+        height: 56px;
+        background: #E02822;
+        position: absolute;
+        right: 15%;
+        top: 0px;
+        box-shadow: 1px 1px 3px #528990;
+        border: 2px solid white;
+        border-top: none;
+    }
+
+    #socialMedia03
+    {
+        width: 56px;
+        height: 56px;
+        background: #1DA1F2;
+        position: absolute;
+        right: 20%;
+        top: 0px;
+        box-shadow: 1px 1px 3px #528990;
+        border: 2px solid white;
+        border-top: none;
+    }
+}
+
+/* If screen is narrower than 1000px*/
+@media screen and (max-width: 1000px) 
+{
+    #socialMedia01
+    {
+        width: 56px;
+        height: 56px;
+        background: #FF8080;
+        position: absolute;
+        right: 5%;
+        top: 0px;
+        box-shadow: 1px 1px 3px #528990;
+        border: 2px solid white;
+        border-top: none;
+    }
+
+    #socialMedia02
+    {
+        width: 56px;
+        height: 56px;
+        background: #E02822;
+        position: absolute;
+        right: 15%;
+        top: 0px;
+        box-shadow: 1px 1px 3px #528990;
+        border: 2px solid white;
+        border-top: none;
+    }
+
+    #socialMedia03
+    {
+        width: 56px;
+        height: 56px;
+        background: #1DA1F2;
+        position: absolute;
+        right: 25%;
+        top: 0px;
+        box-shadow: 1px 1px 3px #528990;
+        border: 2px solid white;
+        border-top: none;
+    }
+}
+
+#socialMedia01:hover, #socialMedia02:hover, #socialMedia03:hover
+{
+    top: -10px;
+}

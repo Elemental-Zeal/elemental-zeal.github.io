@@ -5,6 +5,8 @@
 		<title>
 			Page Not Found (404 Error) - Elemental Zeal
 		</title>
+		<script src="js/loader.js"></script>
+        <script src="js/dates.js"></script>
 	</head>
 
 	<body>
@@ -38,13 +40,14 @@
 					</div>
 				</div>
 			</div>
-		</div> <!--Container-->
-		<div id = "footer">
-            <hr id = "footerHr">
-            <div id = "copyright"> 
-                Copyright &copy; 2011-2021 Elemental Zeal. All Rights Reserved. All logos, artwork, titles, and other content are property of Elemental Zeal.
-                <br>
-            </div>
-        </div>
+		</div> <!--container-->
+
+		<div id = "footerDiv">
+		</div>
+ 
+		<script>
+			includeFile("footer.html", "footerDiv");
+			updateCurrentYear();
+		</script>
 	</body>
 <html>

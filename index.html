@@ -7,6 +7,8 @@
 		</title>
         <meta name="description" content="Making games we'd like to play, and hoping you agree.">
         <meta name="keywords" content="Games, Unity, Ludum, Dare, Jam, Prototypes, Development, Indie">
+        <script src="js/loader.js"></script>
+        <script src="js/dates.js"></script>
 	</head>
 
 	<body>
@@ -45,15 +47,14 @@
                    </div>
                </div>
            </div>
-       </div> <!--Container-->
+       </div> <!--container-->
 
-		<br>
-        <div id = "footer">
-            <hr id = "footerHr">
-            <div id = "copyright"> 
-                Copyright &copy; 2011-2021 Elemental Zeal. All Rights Reserved. All logos, artwork, titles, and other content are property of Elemental Zeal.
-                <br>
-            </div>
-        </div>
+       <div id = "footerDiv">
+       </div>
+
+       <script>
+           includeFile("footer.html", "footerDiv");
+           updateCurrentYear();
+       </script>
 	</body>
 <html>

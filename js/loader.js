@@ -42,5 +42,5 @@ function includeFile(filename, elementID)
 
     var content = request.responseText;
 
-    document.getElementById(elementID).innerHTML = content + "test"
+    document.getElementById(elementID).innerHTML = content
 }

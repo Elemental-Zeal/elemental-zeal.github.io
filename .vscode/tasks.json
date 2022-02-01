@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Site",
+            "type": "shell",
+            "command": "docker-compose up"
+        },
+        {
+            "label": "Stop Site",
+            "type": "shell",
+            "command": "docker-compose down"
+        },
+        {
+            "label": "Rebuild Site",
+            "type": "shell",
+            "command": "docker-compose build"
+        }
+    ]
+}

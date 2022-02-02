@@ -1,0 +1,160 @@
+{
+    "games": [
+        {
+            "name": "Scuba Adventure",
+            "sanitizedName": "ScubaAdventure"
+        },
+        {
+            "name": "Bridge Crosser",
+            "sanitizedName": "BridgeCrosser"
+        },
+        {
+            "name": "Fishy Warfare",
+            "sanitizedName": "FishyWarfare"
+        },
+        {
+            "name": "Not So Fast",
+            "sanitizedName": "NotSoFast"
+        },
+        {
+            "name": "Dulcifly",
+            "sanitizedName": "Dulcifly"
+        },
+        {
+            "name": "What Kind of Monster Uses a Spear",
+            "sanitizedName": "WhatKindOfMonsterUsesASpear"
+        }
+    ],
+    "jams": [
+        {
+            "name": "Evosmash",
+            "sanitizedName": "Evosmash"
+        },
+        {
+            "name": "Metal Minions",
+            "sanitizedName": "MetalMinions"
+        },
+        {
+            "name": "No Air Out Here",
+            "sanitizedName": "NoAirOutHere"
+        },
+        {
+            "name": "Fish Eyes",
+            "sanitizedName": "FishEyes"
+        },
+        {
+            "name": "Elemental Gravity",
+            "sanitizedName": "ElementalGravity"
+        },
+        {
+            "name": "Trench Coat Tunes",
+            "sanitizedName": "TrenchCoatTunes"
+        },
+        {
+            "name": "10 / 10 Would Ride Again",
+            "sanitizedName": "1010WouldRideAgain"
+        },
+        {
+            "name": "Elves' Eve",
+            "sanitizedName": "ElvesEve"
+        },
+        {
+            "name": "Makeshift Mouse King",
+            "sanitizedName": "MakeshiftMouseKing"
+        },
+        {
+            "name": "The Asteroids I Call Home",
+            "sanitizedName": "TheAsteroidsICallHome"
+        },
+        {
+            "name": "Potato Salad Man",
+            "sanitizedName": "PotatoSaladMan"
+        },
+        {
+            "name": "Slop Slinger",
+            "sanitizedName": "SlopSlinger"
+        },
+        {
+            "name": "Galactyc Budget Flights",
+            "sanitizedName": "GalactycBudgetFlights"
+        },
+        {
+            "name": "AquaphobiCats",
+            "sanitizedName": "AquaphobiCats"
+        },
+        {
+            "name": "Irksome Knight",
+            "sanitizedName": "IrksomeKnight"
+        },
+        {
+            "name": "B0T-4NY",
+            "sanitizedName": "B0T-4NY"
+        },
+        {
+            "name": "Go Shape Yourself",
+            "sanitizedName": "GoShapeYourself"
+        },
+        {
+            "name": "The Chamber Crowd",
+            "sanitizedName": "TheChamberCrowd"
+        },
+        {
+            "name": "Satellite Bash",
+            "sanitizedName": "SatelliteBash"
+        },
+        {
+            "name": "Final Factory Flux",
+            "sanitizedName": "FinalFactoryFlux"
+        },
+        {
+            "name": "Daily Debug Dash",
+            "sanitizedName": "DailyDebugDash"
+        },
+        {
+            "name": "Jumper Cables",
+            "sanitizedName": "JumperCables"
+        },
+        {
+            "name": "Spaceship Slam",
+            "sanitizedName": "SpaceshipSlam"
+        },
+        {
+            "name": "Triag'd",
+            "sanitizedName": "Triagd"
+        },
+        {
+            "name": "With All My Heart",
+            "sanitizedName": "WithAllMyHeart"
+        },
+        {
+            "name": "Healthy Competition",
+            "sanitizedName": "HealthyCompetition"
+        },
+        {
+            "name": "Dr. Hackerman",
+            "sanitizedName": "DrHackerman"
+        },
+        {
+            "name": "Choo Choo Circuit",
+            "sanitizedName": "ChooChooCircuit"
+        }
+    ],
+    "prototypes": [
+        {
+            "name": "Archer Z",
+            "sanitizedName": "ArcherZ"
+        },
+        {
+            "name": "Swarms",
+            "sanitizedName": "Swarms"
+        },
+        {
+            "name": "Planet Generation",
+            "sanitizedName": "PlanetGeneration"
+        },
+        {
+            "name": "You Can Only Steer",
+            "sanitizedName": "YouCanOnlySteer"
+        }
+    ]
+}

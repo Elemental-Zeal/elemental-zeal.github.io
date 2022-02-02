@@ -1,0 +1,206 @@
+.sectionHeader
+{
+  text-align: center;   
+  font-size: 2em;
+  padding: 10px 0 10px 0;
+  font-weight: bolder;
+  color: #e7e7e7 !important;
+}
+
+.sectionHeader a
+{
+    color: #e7e7e7 !important;
+}
+
+.Sec
+{
+	padding-bottom: 20px;
+}
+
+.Left
+{
+  float: left;
+}
+
+.Right
+{
+  float: right;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.GooglePlayIcon img
+{
+	margin-top: 14px;
+}
+
+.Games
+{
+	width: 25%;
+	float: left;
+}
+
+.GameInfo
+{
+	width: 95%;
+}
+
+
+/* If screen is wider than 1000px*/
+@media screen and (min-width: 1000px) 
+{
+    .GamesCell
+    {
+        padding: 18px;
+        width:25%;
+        box-sizing: border-box;
+    }
+}
+/* If screen is narrower than 1000px*/
+@media screen and (max-width: 1000px) 
+{
+    .GamesCell
+    {
+        padding: 18px;
+        width:33%;
+        box-sizing: border-box;
+    }
+}
+
+
+.GamesCell img
+{	
+    width: 100%;
+    box-shadow:
+    	0px 0px 0px 2px rgba(0,0,0,0.6),
+        0px 0px 0px 14px #fff,
+        0px 0px 0px 18px rgba(0,0,0,0.2)
+}
+
+.StackLeft
+{
+    background-color: white;
+    padding-left: 28%;
+    padding-right: 66px;
+    padding-top: 6px;
+    padding-bottom: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+    -webkit-box-shadow: 
+        -1px 1px   0 rgba(0,   0,   0,   0.100), 
+        -3px 3px   0 rgba(255, 255, 255, 1.0), 
+        -4px 4px   0 rgba(0,   0,   0,   0.125), 
+        -6px 6px   0 rgba(255, 255, 255, 1.0),  
+        -7px 7px   0 rgba(0,   0,   0,   0.150), 
+        -9px 9px   0 rgba(255, 255, 255, 1.0),  
+        -10px 10px 0 rgba(0,   0,   0,   0.175);
+    -moz-box-shadow: 
+        -1px 1px   0 rgba(0,   0,   0,   0.100), 
+        -3px 3px   0 rgba(255, 255, 255, 1.0), 
+        -4px 4px   0 rgba(0,   0,   0,   0.125), 
+        -6px 6px   0 rgba(255, 255, 255, 1.0),  
+        -7px 7px   0 rgba(0,   0,   0,   0.150), 
+        -9px 9px   0 rgba(255, 255, 255, 1.0),  
+        -10px 10px 0 rgba(0,   0,   0,   0.175);
+    box-shadow: 
+        -1px 1px   0 rgba(0,   0,   0,   0.100), 
+        -3px 3px   0 rgba(255, 255, 255, 1.0), 
+        -4px 4px   0 rgba(0,   0,   0,   0.125), 
+        -6px 6px   0 rgba(255, 255, 255, 1.0),  
+        -7px 7px   0 rgba(0,   0,   0,   0.150), 
+        -9px 9px   0 rgba(255, 255, 255, 1.0),  
+        -10px 10px 0 rgba(0,   0,   0,   0.175);
+}
+
+.StackRight
+{
+    background-color: white;
+    padding-left: 48px;
+    padding-right: 23%;
+    padding-top: 6px;
+    padding-bottom: 15px;
+    margin-right: 50px;
+    margin-top: 50px;
+    -webkit-box-shadow: 
+        1px 1px   0 rgba(0,   0,   0,   0.100), 
+        3px 3px   0 rgba(255, 255, 255, 1.0), 
+        4px 4px   0 rgba(0,   0,   0,   0.125), 
+        6px 6px   0 rgba(255, 255, 255, 1.0),  
+        7px 7px   0 rgba(0,   0,   0,   0.150), 
+        9px 9px   0 rgba(255, 255, 255, 1.0),  
+        10px 10px 0 rgba(0,   0,   0,   0.175);
+    -moz-box-shadow: 
+        1px 1px   0 rgba(0,   0,   0,   0.100), 
+        3px 3px   0 rgba(255, 255, 255, 1.0), 
+        4px 4px   0 rgba(0,   0,   0,   0.125), 
+        6px 6px   0 rgba(255, 255, 255, 1.0),  
+        7px 7px   0 rgba(0,   0,   0,   0.150), 
+        9px 9px   0 rgba(255, 255, 255, 1.0),  
+        10px 10px 0 rgba(0,   0,   0,   0.175);
+    box-shadow: 
+        1px 1px   0 rgba(0,   0,   0,   0.100), 
+        3px 3px   0 rgba(255, 255, 255, 1.0), 
+        4px 4px   0 rgba(0,   0,   0,   0.125), 
+        6px 6px   0 rgba(255, 255, 255, 1.0),  
+        7px 7px   0 rgba(0,   0,   0,   0.150), 
+        9px 9px   0 rgba(255, 255, 255, 1.0),  
+        10px 10px 0 rgba(0,   0,   0,   0.175);
+}
+
+.Text
+{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.04) 85%);
+  height: 75%;
+  overflow: auto;
+}
+
+.Text p
+{
+  padding: 20px;
+}
+
+.Title
+{
+  font-size: 2em;
+  padding: 10px 0 10px 0;
+  font-weight: bolder;
+}
+
+.Date 
+{
+  font-size: 1.1em;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 5px 40px;
+	margin: 15px 15px 0 0;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+	float: left;
+}
+
+.Blue
+{
+	background-color: #56A7BF;
+	border: 1px solid #457D8D;
+	text-shadow: 0px -2px #457D8D;
+}
+
+.Blue:hover
+{
+	background-color: #457D8D;
+}

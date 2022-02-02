@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/projectList.css">
+    <title>
+        Jams - Elemental Zeal
+    </title>
+    <meta name="description" content="Making games we'd like to play, and hoping you agree">
+    <meta name="keywords" content="Games, Unity, Ludum, Dare, Jam, Prototypes, Development, Indie">
+    <script src="js/loader.js"></script>
+    <script src="js/dates.js"></script>
+</head>
+
+<body>
+    <div id="headerDiv">
+    </div>
+
+    <div id="jamsDiv">
+    </div>
+
+    <div id="footerDiv">
+    </div>
+
+    <script>
+        includeFile("header.html", "headerDiv");
+        includeFile("social.html", "socialDiv");
+        includeFile("nav.html", "navDiv");
+        includeFile("footer.html", "footerDiv");
+        updateCurrentYear();
+
+        var projectsObject = readProjectsJson();
+        includeList(projectsObject, "jams", "jamsDiv")
+    </script>
+</body>
+<html>

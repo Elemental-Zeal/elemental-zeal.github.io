@@ -1,0 +1,22 @@
+#footer
+{
+	width: 75%;
+	color: #FFFFFF;
+	font-size: 1em;
+	text-decoration: none;
+	margin: 0 auto;
+	font-size: 2em;
+	text-align: center;
+}
+
+#footerHr
+{
+	width: 100%!important;
+}
+
+#copyright
+{
+	margin-top: 10px;
+	font-size: 0.5em;
+	padding-bottom: 40px;
+}

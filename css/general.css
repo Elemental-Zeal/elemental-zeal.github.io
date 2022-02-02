@@ -57,11 +57,6 @@ hr
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#footerHr
-{
-	width: 100%!important;
-}
-
 p
 {
 	font-size: 1.1em;
@@ -107,43 +102,11 @@ a
 	padding-top: 20px;
 }
 
-#header
+.contentDiv
 {
-	width: 75%;
-	color: #FFFFFF;
-	font-size: 1em;
-	text-decoration: none;
-	margin: 0 auto;
-	font-size: 2em;
-	padding-bottom: 20px;
-}
-
-#header a, #footer a
-{
-	color: #FFFFFF;
-	font-size: 1em;
-	text-decoration: none;
-}
-
-#footer
-{
-	width: 75%;
-	color: #FFFFFF;
-	font-size: 1em;
-	text-decoration: none;
-	margin: 0 auto;
-	font-size: 2em;
-	text-align: center;
-}
-
-#header a:hover, #footer a:hover
-{
-	color: #DDDDDD;
-}
-
-#copyright
-{
-	margin-top: 10px;
-	font-size: 0.5em;
-	padding-bottom: 40px;
+  text-align: center;	
+  font-size: 1em;
+  padding: 0 0 10px 0;
+  font-weight: bolder;
+  color: #e7e7e7 !important;
 }

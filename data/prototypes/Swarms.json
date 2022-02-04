@@ -1,3 +1,13 @@
 {
-    
+    "title": "Swarms",
+    "releaseDate": "Monday, December 5th, 2016",
+    "itchio": "https://elemental-zeal.itch.io/swarms?secret=yY5zTdHp56b1e0LvRtLP7flee4k",
+    "description": "A simple prototype that is a boid based space scrolling shooter. Keep your ships safe from the asteroids!",
+    "mouseKeyboardControls": [
+        "Mouse to Move Your Mothership",
+        "Left Mouse to Shoot Your Main Weapon",
+        "R to Retry"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

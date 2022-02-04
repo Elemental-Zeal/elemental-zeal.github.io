@@ -1,3 +1,12 @@
 {
-    
+    "title": "What Kind of Monster Uses a Spear",
+    "releaseDate": "Monday, June 20th, 2016",
+    "itchio": "https://elemental-zeal.itch.io/what-kind-of-monster-uses-a-spear",
+    "description": "",
+    "mouseKeyboardControls": [
+        "Left Click to throw a spear",
+        "Left Click to wind in your spear"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

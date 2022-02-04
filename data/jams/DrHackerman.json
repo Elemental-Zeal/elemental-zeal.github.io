@@ -1,3 +1,14 @@
 {
-    
+    "title": "Dr. Hackerman",
+    "releaseDate": "Monday, April 20th, 2020",
+    "itchio": "https://elemental-zeal.itch.io/dr-hackerman",
+    "ludumDare": "https://ldjam.com/events/ludum-dare/46/$201803",
+    "description": "",
+    "mouseKeyboardControls": [
+        "Typing - Type the approaching words to block the hacker",
+        "Escape - Hit escape to pause the game",
+        "Click - Click menu buttons to navigate"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

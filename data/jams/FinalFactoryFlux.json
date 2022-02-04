@@ -1,3 +1,21 @@
 {
-    
+    "title": "Final Factory Flux",
+    "releaseDate": "Monday, July 31th, 2017",
+    "itchio": "https://elemental-zeal.itch.io/final-factory-flux",
+    "ludumDare": "https://ldjam.com/events/ludum-dare/39/final-factory-flux",
+    "description": "",
+    "mouseKeyboardControls": [
+        "WASD to move",
+        "E to grab/drop",
+        "F to prep",
+        "SHIFT to switch robots (in single player)"
+    ],
+    "controllerControls": [
+        "Left stick to move",
+        "A to grab/drop",
+        "X to prep",
+        "Y to switch robots (in single player)"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

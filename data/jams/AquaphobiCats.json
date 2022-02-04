@@ -1,3 +1,19 @@
 {
-    
+    "title": "AquaphobiCats",
+    "releaseDate": "Monday, April 20th, 2015",
+    "itchio": "https://elemental-zeal.itch.io/aquaphobicats",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=12839",
+    "description": "",
+    "mouseKeyboardControls": [
+        "A/D to Move",
+        "W to Jump",
+        "Left Click to Use Your Spray Bottle"
+    ],
+    "controllerControls": [
+        "Left Stick to Move",
+        "A to Jump",
+        "Right Stick to Use Your Spray Bottle"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

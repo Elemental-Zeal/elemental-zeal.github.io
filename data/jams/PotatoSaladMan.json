@@ -1,3 +1,22 @@
 {
-    
+    "title": "",
+    "releaseDate": "",
+    "itchio": "",
+    "ludumDare": "",
+    "playstore": "",
+    "description": "",
+    "controls": [
+        "",
+        ""
+    ],
+    "mouseKeyboardControls": [
+        "",
+        ""
+    ],
+    "controllerControls": [
+        "",
+        ""
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

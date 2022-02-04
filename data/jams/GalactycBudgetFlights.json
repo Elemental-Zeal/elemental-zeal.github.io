@@ -1,3 +1,18 @@
 {
-    
+    "title": "Galactyc Budget Flights",
+    "releaseDate": "Monday, December 8th, 2014",
+    "itchio": "https://elemental-zeal.itch.io/galactyc-budget-flights",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=12839",
+    "description": "",
+    "mouseKeyboardControls": [
+        "Mouse switch between tabs",
+        "1,2,3 Keys to switch between tabs",
+        "Up/Down Arrow Keys or W/S to switch between tabs",
+        "M to mute",
+        "Left/Right Arrow Keys or A/D for navigating your ship (on the navigation tab)",
+        "Alternate Left/Right Arrow Keys or A/D for stabilizing engines (on the engine tab)",
+        "Hit Space Bar to dump coolant into the engine (More coolant the closer the coolant dot is to the center of the coolant bar)"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

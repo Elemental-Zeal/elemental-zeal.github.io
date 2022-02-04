@@ -1,3 +1,19 @@
 {
-    
+    "title": "Elves' Eve",
+    "releaseDate": "Monday, December 16th, 2013",
+    "itchio": "https://elemental-zeal.itch.io/elves-eve",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=12839",
+    "description": "",
+    "mouseKeyboardControls": [
+        "A/D or Left Arrow/Right Arrow to Walk",
+        "W/S or Up Arrow/Down Arrow for throwing angle",
+        "Space bar to prepare for throw",
+        "Space bar to throw",
+        "R to reset",
+        "P to pause",
+        "M to Mute",
+        "Enter to fast forward"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

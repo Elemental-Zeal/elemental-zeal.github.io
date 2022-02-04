@@ -1,3 +1,12 @@
 {
-    
+    "title": "B0T-4NY",
+    "releaseDate": "Monday, December 14th, 2015",
+    "itchio": "https://elemental-zeal.itch.io/b0t-4ny",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=1283",
+    "description": "",
+    "mouseKeyboardControls": [
+        "Point and Click to interact with items"
+    ],
+    "price": "Free",
+    "type": "Unity"
 }

@@ -168,15 +168,94 @@ function loadProjectPage()
 
     if (found == false)
     {
-        // alert ("Project " + projectName + " not found");
+        window.location.href = "/404.html";
     }
     else
     {
-        updatePageTitle(projectName);
+        var title = projectInformation.title;
+        updatePageTitle(title);
+        updateProjectTitles(title);
+        updateProjectReleaseDate(projectInformation.releaseDate);
+        updateProjectDescription(projectInformation.description);
+        updateProjectControls(projectInformation.controls, "projectControls", "Controls");
+        updateProjectControls(projectInformation.mouseKeyboardControls, "mouseKeyboardControls", "Mouse/Keyboard Controls");
+        updateProjectControls(projectInformation.controllerControls, "controllerControls", "Controller Controls");
+        updateProjectScreenshots(projectName);
     }
 }
 
 function updatePageTitle(name)
 {
     document.title = name + " - Elemental Zeal";
+}
+
+function updateProjectTitles(name)
+{
+    var elementID = "projectTitleDiv";
+    document.getElementById(elementID).innerHTML = name;
+
+    var elementID = "projectPageTitleDiv";
+    document.getElementById(elementID).innerHTML = name;
+}
+
+function updateProjectReleaseDate(date)
+{
+    var elementID = "projectReleaseDateDiv";
+
+    if (date)
+    {
+        document.getElementById(elementID).innerHTML = date;
+    }
+    else
+    {
+        var element = document.getElementById(elementID);
+        element.parentNode.removeChild(element);
+    }
+}
+
+function updateProjectDescription(description)
+{
+    var elementID = "projectDescription";
+
+    if (description)
+    {
+        var contents = "<b>Description</b><br><br>";
+        contents += description;
+
+        document.getElementById(elementID).innerHTML = contents;
+    }
+    else
+    {
+        var element = document.getElementById(elementID);
+        element.parentNode.removeChild(element);
+    }
+}
+
+function updateProjectControls(controls, elementID, label)
+{
+    if (controls)
+    {    
+        var contents = "<b>" + label + "</b><ui><br><br>";
+
+        for (index in controls)
+        {
+            control = controls[index];
+            contents += "<li> " + control + "</li>";
+        }
+
+        contents += "</ui>";
+        document.getElementById(elementID).innerHTML = contents;
+    }
+    else
+    {
+        var element = document.getElementById(elementID);
+        element.parentNode.removeChild(element);
+    }
+}
+
+function updateProjectScreenshots(name)
+{
+    var elementID = "mainScreenshot";
+    var imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png"></img>'
+    document.getElementById(elementID).innerHTML = imageElement;
 }

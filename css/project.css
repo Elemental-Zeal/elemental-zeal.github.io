@@ -1,0 +1,95 @@
+.Stack
+{
+    background-color: white;
+    height: 95%;
+    padding-left: 20px;
+    padding-right: 28px;
+    padding-top: 6px;
+    padding-bottom: 15px;
+    -webkit-box-shadow: 
+        -1px 1px   0 rgba(0,   0,   0,   0.100), 
+        -3px 3px   0 rgba(255, 255, 255, 1.0), 
+        -4px 4px   0 rgba(0,   0,   0,   0.125), 
+        -6px 6px   0 rgba(255, 255, 255, 1.0),  
+        -7px 7px   0 rgba(0,   0,   0,   0.150), 
+        -9px 9px   0 rgba(255, 255, 255, 1.0),  
+        -10px 10px 0 rgba(0,   0,   0,   0.175);
+    -moz-box-shadow: 
+        -1px 1px   0 rgba(0,   0,   0,   0.100), 
+        -3px 3px   0 rgba(255, 255, 255, 1.0), 
+        -4px 4px   0 rgba(0,   0,   0,   0.125), 
+        -6px 6px   0 rgba(255, 255, 255, 1.0),  
+        -7px 7px   0 rgba(0,   0,   0,   0.150), 
+        -9px 9px   0 rgba(255, 255, 255, 1.0),  
+        -10px 10px 0 rgba(0,   0,   0,   0.175);
+    box-shadow: 
+        -1px 1px   0 rgba(0,   0,   0,   0.100), 
+        -3px 3px   0 rgba(255, 255, 255, 1.0), 
+        -4px 4px   0 rgba(0,   0,   0,   0.125), 
+        -6px 6px   0 rgba(255, 255, 255, 1.0),  
+        -7px 7px   0 rgba(0,   0,   0,   0.150), 
+        -9px 9px   0 rgba(255, 255, 255, 1.0),  
+        -10px 10px 0 rgba(0,   0,   0,   0.175);
+}
+
+#projectPageTitleDiv
+{
+  text-align: center;   
+  font-size: 2em;
+  padding: 10px 0 10px 0;
+  font-weight: bolder;
+  color: #e7e7e7 !important;
+}
+
+.Green
+{
+	background-color: #82BF56;
+	border: 1px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.Green:hover
+{
+	background-color: #669644;
+    border-bottom: none;
+}
+
+.Pink
+{
+	background-color: #FA5C5C;
+	border: 1px solid #B24040;
+	text-shadow: 0px -2px #B24040;	
+}
+
+.Pink:hover
+{
+	background-color: #B24040;
+    border-bottom: none;
+}
+
+.Purple
+{
+	background-color: #942AD6;
+	border: 1px solid #5E1989;
+	text-shadow: 0px -2px #5E1989;
+}
+
+.Purple:hover
+{
+	background-color: #5E1989;
+    border-bottom: none;
+}
+
+.controlsBox
+{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.bigScreenshot
+{
+    width: 100%;
+    box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 60%),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgb(0 0 0 / 20%);
+}

@@ -1,21 +1,14 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
+    "title": "Triag'd",
+    "releaseDate": "Monday, December 3rd, 2018",
+    "itchio": "https://elemental-zeal.itch.io/triagd",
+    "ludumDare": "https://ldjam.com/events/ludum-dare/43/triagd",
     "description": "",
     "controls": [
-        "",
-        ""
-    ],
-    "mouseKeyboardControls": [
-        "",
-        ""
-    ],
-    "controllerControls": [
-        "",
-        ""
+        "Click a doctor sticky note under the 'Available Doctors' section and then click a patient card to assign the doctor to that patient. Multiple doctors can be assigned to a single patient.",
+        "To unassign doctors, click the doctor on the patient card. Doctor's can only be assigned/unassigned one at a time.",
+        "The more doctors a patient has, the higher chance that they will survive.",
+        "Patients that survive make donations to the hospital. Use these donations to upgrade the hospital and hire more doctors. These upgrades will boost the survivability of patients for future rounds."
     ],
     "price": "Free",
     "type": "Unity"

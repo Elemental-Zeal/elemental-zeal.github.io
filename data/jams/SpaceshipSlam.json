@@ -1,21 +1,16 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
+    "title": "Spaceship Slam",
+    "releaseDate": "Monday, August 13th, 2018",
+    "itchio": "https://elemental-zeal.itch.io/spaceship-slam",
+    "ludumDare": "https://ldjam.com/events/ludum-dare/42/spaceship-slam",
     "description": "",
-    "controls": [
-        "",
-        ""
-    ],
     "mouseKeyboardControls": [
-        "",
-        ""
+        "Left Click - Launch Ship",
+        "Escape/P - Pause"
     ],
     "controllerControls": [
-        "",
-        ""
+        "Left Stick - Launch Ship",
+        "Start - Pause"
     ],
     "price": "Free",
     "type": "Unity"

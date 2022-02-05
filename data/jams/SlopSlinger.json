@@ -1,21 +1,27 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
+    "title": "Slop Slinger",
+    "releaseDate": "Friday, November 14th, 2014",
+    "itchio": "https://elemental-zeal.itch.io/slop-slinger",
     "description": "",
-    "controls": [
-        "",
-        ""
-    ],
     "mouseKeyboardControls": [
-        "",
-        ""
+        "Space - Jump",
+		"WASD - Move",
+		"Mouse - Aim",
+		"Left Click - Shoot",
+		"Control - Crouch",
+		"Shift - Sprint",
+		"E - Eat",
+		"Q - Slow Down Time"
     ],
     "controllerControls": [
-        "",
-        ""
+        "A - Jump",
+		"Left Stick - Move",
+		"Right Stick - Aim",
+		"Right Trigger - Shoot",
+		"B - Crouch",
+		"L3 - Sprint",
+		"X - Eat",
+		"Right Bumper - Slow Down Time"
     ],
     "price": "Free",
     "type": "Unity"

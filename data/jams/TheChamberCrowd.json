@@ -1,21 +1,18 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
+    "title": "The Chamber Crowd",
+    "releaseDate": "Monday, December 12th, 2016",
+    "itchio": "https://elemental-zeal.itch.io/the-chamber-crowd",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-37/?action=preview&uid=12839",
     "description": "",
-    "controls": [
-        "",
-        ""
-    ],
     "mouseKeyboardControls": [
-        "",
-        ""
+        "WASD - Tilt the Room",
+        "Mouse/IJKL - Rotate/Zoom the Camera",
+        "Escape - Return to Main Menu"
     ],
     "controllerControls": [
-        "",
-        ""
+        "Left Stick - Tilt the Room",
+        "Right Stick - Rotate/Zoom the Camera",
+        "Back - Return to Main Menu"
     ],
     "price": "Free",
     "type": "Unity"

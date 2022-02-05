@@ -1,21 +1,24 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
+    "title": "The Asteroids I Call Home",
+    "releaseDate": "Sunday, August 24th, 2014",
+    "itchio": "https://elemental-zeal.itch.io/the-asteroids-i-call-home",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=12839",
     "description": "",
-    "controls": [
-        "",
-        ""
-    ],
     "mouseKeyboardControls": [
-        "",
-        ""
+        "WASD/Arrow Keys - Move",
+        "Space Bar - Jump",
+        "P - Pause",
+        "M - Mute",
+        "ESC - Quit Game/Return to Previous Menu",
+        "R - Quick Restart from Gameover/Highscore Page"
     ],
     "controllerControls": [
-        "",
-        ""
+        "Left Analog Stick - Move",
+		"A - Jump",
+		"Start - Pause",
+        "Mute - Y",
+		"Back - Quit/Return to Previous Menu",
+		"X - Quick Restart from Gameover/Highscore Page"
     ],
     "price": "Free",
     "type": "Unity"

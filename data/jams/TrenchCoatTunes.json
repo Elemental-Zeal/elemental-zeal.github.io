@@ -1,22 +1,9 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
+    "title": "Trench Coat Tunes",
+    "releaseDate": "Monday, August 26th, 2013",
+    "itchio": "https://elemental-zeal.itch.io/trench-coat-tunes",
+    "ludumDare": "http://ludumdare.com/compo/ludum-dare-27/?action=preview&uid=12839",
     "description": "",
-    "controls": [
-        "",
-        ""
-    ],
-    "mouseKeyboardControls": [
-        "",
-        ""
-    ],
-    "controllerControls": [
-        "",
-        ""
-    ],
     "price": "Free",
     "type": "Unity"
 }

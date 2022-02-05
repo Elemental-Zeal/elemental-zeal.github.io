@@ -1,21 +1,20 @@
 {
-    "title": "",
-    "releaseDate": "",
-    "itchio": "",
-    "ludumDare": "",
-    "playstore": "",
-    "description": "",
-    "controls": [
-        "",
-        ""
-    ],
+    "title": "Potato Salad Man",
+    "releaseDate": "Wednesday, July 30th, 2014",
+    "itchio": "https://elemental-zeal.itch.io/potato-salad-man",
+    "description": "Play as the great inventor of the Mass Rearranger, and make some potato salad. Easy right? Made for the Potato Salad Game Jam",
     "mouseKeyboardControls": [
-        "",
-        ""
+        "A/D to walk left/right",
+        "Space to Jump",
+        "E to Interact",
+        "Shift/Control to Transform (Shift reforms you where you deformed, Control reforms you at your new location)"
     ],
     "controllerControls": [
-        "",
-        ""
+        "Left Analog to walk left/right",
+        "A to Jump",
+        "X to Interact",
+        "B/Y to Transform (B reforms you where you deformed, Y reforms you at your new location)",
+        "DPad to interact with the sliding puzzle"
     ],
     "price": "Free",
     "type": "Unity"

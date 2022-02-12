@@ -3,7 +3,6 @@
     "releaseDate": "Monday, October 5th, 2020",
     "itchio": "https://elemental-zeal.itch.io/choo-choo-circuit",
     "ludumDare": "https://ldjam.com/events/ludum-dare/47/choo-choo-circuit",
-    "description": "",
     "mouseKeyboardControls": [
         "Left Click - Enable or disable switch tracks. Switch tracks can be activated while the game is paused.",
         "Spacebar - Pause/Resume",

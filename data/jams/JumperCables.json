@@ -3,7 +3,6 @@
     "releaseDate": "Monday, April 23rd, 2018",
     "itchio": "https://elemental-zeal.itch.io/jumper-cables",
     "ludumDare": "https://ldjam.com/events/ludum-dare/41/jumper-cables",
-    "description": "A racing-platformer hybrid game where you race to the finish battling other cars and physics itself.",
     "mouseKeyboardControls": [
         "WASD/Arrow Keys - Move",
         "Space Bar - Jump",

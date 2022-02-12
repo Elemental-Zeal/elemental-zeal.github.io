@@ -3,8 +3,6 @@
     "releaseDate": "Monday, December 4th, 2017",
     "itchio": "https://elemental-zeal.itch.io/daily-debug-dash",
     "ludumDare": "https://ldjam.com/events/ludum-dare/40/daily-debug-dash",
-    "playstore": "",
-    "description": "",
     "mouseKeyboardControls": [
         "Drag and drop code pieces to the appropriate spots",
         "Remove code pieces by dropping them in the trash."

@@ -3,7 +3,6 @@
     "releaseDate": "Monday April 29th, 2019",
     "itchio": "https://elemental-zeal.itch.io/with-all-my-heart",
     "ludumDare": "https://ldjam.com/events/ludum-dare/44/with-all-my-heart",
-    "description": "",
     "controls": [
         "Click a spot on the space station to bring up the purchase menu. Click a tower from that menu to place it in the selected spot.",
         "Click a tower to bring up the upgrade or absorb menu. Click the upgrade icon to upgrade the tower, or the absorb icon to destroy the tower and return its remaining life force to the crystal heart.",

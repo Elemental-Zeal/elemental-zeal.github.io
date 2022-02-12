@@ -77,9 +77,10 @@ function includeList(projectsObject, list, elementID)
         }
 
         var description = "N/A"
-        if (projectInformation.description)
+        var descriptionFile = getDescription(sanitizedName);
+        if (descriptionFile)
         {
-            description = projectInformation.description
+            description = descriptionFile;
         }
 
         var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
@@ -117,6 +118,24 @@ function includeList(projectsObject, list, elementID)
     document.getElementById(elementID).innerHTML = content
 }
 
+function getDescription(name)
+{
+    try
+    {
+        var request = new XMLHttpRequest();
+        request.open("GET", "data/descriptions/" + name + ".html", false);
+        request.send(null);
+
+        var content = request.responseText;
+
+        return content;
+    }
+    catch
+    {
+        return null;
+    }
+}
+
 function includeFile(filename, elementID)
 {
     var request = new XMLHttpRequest();
@@ -134,10 +153,12 @@ function loadProjectPage()
 
     var projectLists = readProjectsJson();
 
-    const numLists = projectLists.length;
+    // const numLists = projectLists.length;
 
     var projectInformation;
     var found = false;
+
+    var sanitizedName;
 
     Object.keys(projectLists).forEach(key => {
         var projectList = projectLists[key];
@@ -151,7 +172,7 @@ function loadProjectPage()
             }
 
             var project = projectList[i];
-            var sanitizedName = project.sanitizedName;
+            sanitizedName = project.sanitizedName;
 
             if (sanitizedName === projectName)
             {
@@ -173,10 +194,11 @@ function loadProjectPage()
     else
     {
         var title = projectInformation.title;
+        var description = getDescription(sanitizedName);
         updatePageTitle(title);
         updateProjectTitles(title);
         updateProjectReleaseDate(projectInformation.releaseDate);
-        updateProjectDescription(projectInformation.description);
+        updateProjectDescription(description);
         updateProjectControls(projectInformation.controls, "projectControls", "Controls");
         updateProjectControls(projectInformation.mouseKeyboardControls, "mouseKeyboardControls", "Mouse/Keyboard Controls");
         updateProjectControls(projectInformation.controllerControls, "controllerControls", "Controller Controls");

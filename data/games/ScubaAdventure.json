@@ -2,7 +2,6 @@
     "title": "Scuba Adventure",
     "releaseDate": "Wednesday, March 28th, 2012",
     "windows": "http://www.elementalzeal.com/Downloads/Scuba.zip",
-    "description": "Play as a scuba diver collecting treasure chests and coins to earn money. Use the money collected on your dives to purchase new diving equipment. Beware of sharks, while you enjoy the relaxing ocean sounds and tranquil dives.",
     "price": "Free",
     "type": "XNA/C#"
 }

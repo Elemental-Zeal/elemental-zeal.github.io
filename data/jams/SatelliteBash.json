@@ -3,11 +3,6 @@
     "releaseDate": "Monday, April 24th, 2017",
     "itchio": "https://elemental-zeal.itch.io/satellite-bash",
     "ludumDare": "https://ldjam.com/events/ludum-dare/38/satellite-bash",
-    "description": "",
-    "controls": [
-        "",
-        ""
-    ],
     "mouseKeyboardControls": [
         "WASD/Arrow Keys to move",
         "Left Click to shoot, once unlocked",

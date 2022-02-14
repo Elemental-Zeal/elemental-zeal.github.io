@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>
         Home - Elemental Zeal
     </title>
@@ -19,27 +21,86 @@
     <div id="headerDiv">
     </div>
 
-    <h1 class="pageTitle">
-        <img src="art/logoSmall.png">
-        Elemental Zeal - Home
-    </h1>
     <h2 class="pageSubTitle">
         Making games we'd like to play, and hoping you agree
     </h2>
+    
     <hr>
 
     <div class="container">
+
         <div class="section">
-            <div class="stack">
-                <div class="text">
-                    <p>
-                        Thank you for visiting our site! It is currently under construction.
-                        <br><br>
-                        Find our games on <a href="https://elemental-zeal.itch.io/">Itch.io</a>.
-                        <br>
-                        Contact or follow us on <a href="https://twitter.com/ElementalZeal">Twitter</a>.
-                    </p>
-                </div>
+            <div class="sectionHeader">
+                <a href="/games.html"> Latest Games </a>
+            </div>
+            <hr>
+            <div id="recentGames" class="gamesHold">
+                <a href="project.html?project=WhatKindOfMonsterUsesASpear">
+                    <div class='imageOverlay'>
+                        <img src="/art/thumbnail/WhatKindOfMonsterUsesASpear.png"/>
+                        <div class='imageText'>
+                                <div class='imageTitle'>
+                                    What Kind of Monster Uses a Spear
+                                </div>
+                                <div class='imageDescription'>
+                                    In What Kind of Monster Uses a Spear, you play as an adorable monster on his relaxing (and tasty) fishing day.
+                                </div>
+                                <div class='imageLink'>
+                                    Check It Out
+                                </div>				
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br><br>
+        <div class="section">
+            <div class="sectionHeader">
+                <a href="/jams.html"> Latest Game Jams </a>
+            </div>
+            <hr>
+            <div id="recentJams" class="gamesHold">
+                <a href="project.html?project=WhatKindOfMonsterUsesASpear">
+                    <div class='imageOverlay'>
+                        <img src="/art/thumbnail/WhatKindOfMonsterUsesASpear.png"/>
+                        <div class='imageText'>
+                                <div class='imageTitle'>
+                                    What Kind of Monster Uses a Spear
+                                </div>
+                                <div class='imageDescription'>
+                                    In What Kind of Monster Uses a Spear, you play as an adorable monster on his relaxing (and tasty) fishing day.
+                                </div>
+                                <div class='imageLink'>
+                                    Check It Out
+                                </div>				
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br><br>
+        <div class="section">
+            <div class="sectionHeader">
+                <a href="/prototypes.html"> Prototypes </a>
+            </div>
+            <hr>
+            <div id="recentPrototypes" class="gamesHold">
+                <a href="project.html?project=WhatKindOfMonsterUsesASpear">
+                    <div class='imageOverlay'>
+                        <img src="/art/thumbnail/WhatKindOfMonsterUsesASpear.png"/>
+                        <div class='imageText'>
+                                <div class='imageTitle'>
+                                    What Kind of Monster Uses a Spear
+                                </div>
+                                <div class='imageDescription'>
+                                    In What Kind of Monster Uses a Spear, you play as an adorable monster on his relaxing (and tasty) fishing day.
+                                </div>
+                                <div class='imageLink'>
+                                    Check It Out
+                                </div>				
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -54,8 +115,7 @@
         includeFile("nav.html", "navDiv");
         includeFile("footer.html", "footerDiv");
         updateCurrentYear();
-        // readProjectsJson();
-        // testAccessParameter();
+        loadHomePage();
     </script>
 </body>
 </html>

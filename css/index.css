@@ -1,0 +1,91 @@
+.sectionHeader
+{
+  text-align: center;	
+  font-size: 2em;
+  padding: 10px 0 10px 0;
+  font-weight: bolder;
+  color: #e7e7e7 !important;
+}
+
+.sectionHeader a
+{
+	color: #e7e7e7 !important;
+}
+
+.imageOverlay
+{
+	cursor: pointer;
+	display: inline-block;
+	margin: 20px;
+	position: relative;
+	width: 315px;
+	height: 250px;
+}
+
+.imageOverlay img
+{
+	width: 100%;
+}
+
+.imageOverlay .imageText
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;	
+}
+
+.imageOverlay:hover .imageText
+{
+    display: block;
+    background: rgba(0, 0, 0, .8);
+}
+
+.gamesHold
+{
+	text-align: center;
+}
+
+.gamesHold img
+{
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.6),
+ 				0px 0px 0px 14px #fff,
+ 				0px 0px 0px 18px rgba(0,0,0,0.2);
+}
+
+.imageTitle
+{
+	padding-top: 15px;
+    font-size: 1.3em;	
+}
+
+.imageDescription
+{
+	padding-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 15px;
+}
+
+.imageLink
+{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.sectionHeader a:hover
+{
+	color: #CCCCCC !important
+}
+
+/* If screen is narrower than 1000px*/
+@media screen and (max-width: 1000px) 
+{
+    .imageOverlay
+    {
+        text-align: center;
+    }
+}

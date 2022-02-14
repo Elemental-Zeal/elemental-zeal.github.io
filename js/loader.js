@@ -203,6 +203,7 @@ function loadProjectPage()
         updateProjectControls(projectInformation.mouseKeyboardControls, "mouseKeyboardControls", "Mouse/Keyboard Controls");
         updateProjectControls(projectInformation.controllerControls, "controllerControls", "Controller Controls");
         updateProjectScreenshots(projectName);
+        updateProjectButtons(projectInformation.ludumDare, projectInformation.itchio, projectInformation.playstore);
     }
 }
 
@@ -278,6 +279,186 @@ function updateProjectControls(controls, elementID, label)
 function updateProjectScreenshots(name)
 {
     var elementID = "mainScreenshot";
-    var imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png"></img>'
+    var imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png"></img>';
     document.getElementById(elementID).innerHTML = imageElement;
+}
+
+function updateProjectButtons(ludumDareLink, itchioLink, playstoreLink)
+{
+    var elementID = "buttonBar";
+
+    var contents = "";
+
+    if (ludumDareLink)
+    {
+        contents = '<a href="' + ludumDareLink + '" class="action-button shadow animate Purple PlayPage">';
+        contents += 'Ludum Dare';
+        contents += '</a>';
+    }
+
+    if (itchioLink)
+    {
+        contents += '<a href="' + itchioLink + '" class="action-button shadow animate Pink PlayPage">';
+        contents += 'Itch.io';
+        contents += '</a>';
+    }
+
+    if (playstoreLink)
+    {
+        contents += '<a href="' + playstoreLink + '" class="action-button shadow animate Blue PlayPage">';
+        contents += 'Google Play';
+        contents += '</a>';
+    }
+
+    document.getElementById(elementID).innerHTML = contents;
+}
+
+function loadHomePage()
+{
+    var projectsObject = readProjectsJson();
+    updateRecentGames(projectsObject);
+    updateRecentJams(projectsObject);
+    updateRecentPrototypes(projectsObject);
+}
+
+function updateRecentGames(projectsObject)
+{
+    var list = "games";
+    var projectList = projectsObject[list];
+
+    var elementID = "recentGames";
+
+    var contents = "";
+    var count = 3;
+
+    for (var i = 0; i < count; i++)
+    {
+        var project = projectList[i];
+        var name = project.name;
+
+        var sanitizedName = project.sanitizedName;
+
+        var description = "N/A"
+        var descriptionFile = getDescription(sanitizedName);
+        if (descriptionFile)
+        {
+            description = descriptionFile;
+        }
+
+        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
+
+        contents += `<a href="project.html?project=${sanitizedName}">
+                        <div class='imageOverlay'>
+                            <img src="${thumbnail}"/>
+                            <div class='imageText'>
+                                    <div class='imageTitle'>
+                                        ${name}
+                                    </div>
+                                    <div class='imageDescription'>
+                                        ${description}
+                                    </div>
+                                    <div class='imageLink'>
+                                        Check It Out
+                                    </div>
+                            </div>
+                        </div>
+                    </a>`;
+    }
+
+    document.getElementById(elementID).innerHTML = contents;
+}
+
+function updateRecentJams(projectsObject)
+{
+    var list = "jams";
+    var projectList = projectsObject[list];
+    var listCount = projectList.length;
+
+    var elementID = "recentJams";
+
+    var contents = "";
+    var count = 3;
+
+    for (var i = 1; i <= count; i++)
+    {
+        var project = projectList[listCount - i];
+        var name = project.name;
+
+        var sanitizedName = project.sanitizedName;
+
+        var description = "N/A"
+        var descriptionFile = getDescription(sanitizedName);
+        if (descriptionFile)
+        {
+            description = descriptionFile;
+        }
+
+        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
+
+        contents += `<a href="project.html?project=${sanitizedName}">
+                        <div class='imageOverlay'>
+                            <img src="${thumbnail}"/>
+                            <div class='imageText'>
+                                    <div class='imageTitle'>
+                                        ${name}
+                                    </div>
+                                    <div class='imageDescription'>
+                                        ${description}
+                                    </div>
+                                    <div class='imageLink'>
+                                        Check It Out
+                                    </div>
+                            </div>
+                        </div>
+                    </a>`;		
+    }
+
+    document.getElementById(elementID).innerHTML = contents;
+}
+
+function updateRecentPrototypes(projectsObject)
+{
+    var list = "prototypes";
+    var projectList = projectsObject[list];
+
+    var elementID = "recentPrototypes";
+
+    var contents = "";
+    var count = 3;
+
+    for (var i = 0; i < count; i++)
+    {
+        var project = projectList[i];
+        var name = project.name;
+
+        var sanitizedName = project.sanitizedName;
+
+        var description = "N/A"
+        var descriptionFile = getDescription(sanitizedName);
+        if (descriptionFile)
+        {
+            description = descriptionFile;
+        }
+
+        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
+
+        contents += `<a href="project.html?project=${sanitizedName}">
+                        <div class='imageOverlay'>
+                            <img src="${thumbnail}"/>
+                            <div class='imageText'>
+                                    <div class='imageTitle'>
+                                        ${name}
+                                    </div>
+                                    <div class='imageDescription'>
+                                        ${description}
+                                    </div>
+                                    <div class='imageLink'>
+                                        Check It Out
+                                    </div>
+                            </div>
+                        </div>
+                    </a>`;	
+    }
+
+    document.getElementById(elementID).innerHTML = contents;
 }

@@ -325,15 +325,16 @@ function updateRecentGames(projectsObject)
 {
     var list = "games";
     var projectList = projectsObject[list];
+    var listCount = projectList.length;
 
     var elementID = "recentGames";
 
     var contents = "";
     var count = 3;
 
-    for (var i = 0; i < count; i++)
+    for (var i = 1; i <= count; i++)
     {
-        var project = projectList[i];
+        var project = projectList[listCount - i];
         var name = project.name;
 
         var sanitizedName = project.sanitizedName;
@@ -420,15 +421,16 @@ function updateRecentPrototypes(projectsObject)
 {
     var list = "prototypes";
     var projectList = projectsObject[list];
+    var listCount = projectList.length;
 
     var elementID = "recentPrototypes";
 
     var contents = "";
     var count = 3;
 
-    for (var i = 0; i < count; i++)
+    for (var i = 1; i <= count; i++)
     {
-        var project = projectList[i];
+        var project = projectList[listCount - i];
         var name = project.name;
 
         var sanitizedName = project.sanitizedName;

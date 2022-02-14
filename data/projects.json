@@ -137,6 +137,10 @@
         {
             "name": "Choo Choo Circuit",
             "sanitizedName": "ChooChooCircuit"
+        },
+        {
+            "name": "Kickstart Minecart",
+            "sanitizedName": "KickstartMinecart"
         }
     ],
     "prototypes": [

@@ -1,0 +1,14 @@
+{
+    "title": "Kickstart Minecart",
+    "releaseDate": "Monday, April 26th, 2021",
+    "itchio": "https://elemental-zeal.itch.io/kickstart-minecart",
+    "ludumDare": "https://ldjam.com/events/ludum-dare/48/kickstart-minecart",
+    "mouseKeyboardControls": [
+        "Left click to throw or retract your grappling axe",
+        "Right click to pull yourself towards your grappling axe",
+        "Escape/P to pause",
+        "R to restart"
+    ],
+    "price": "Free",
+    "type": "Unity"
+}

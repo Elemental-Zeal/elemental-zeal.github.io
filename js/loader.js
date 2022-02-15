@@ -82,7 +82,7 @@ function includeList(projectsObject, list, elementID)
         content += `<div id = "${sanitizedName}" class = "Sec">
                         <div class = "GamesCell ${floatDirection}"
                             <a href = "/project.html?project=${sanitizedName}">
-                                <img src = "${thumbnail}"/>
+                                <img src = "${thumbnail}" alt = "${sanitizedName}" width=315 height=250/>
                             </a>
                             <div class = "clear"></div>
                         </div>
@@ -244,7 +244,7 @@ function updateProjectControls(controls, elementID, label)
 {
     if (controls)
     {    
-        var contents = "<b>" + label + "</b><ui><br><br>";
+        var contents = "<b>" + label + "</b><ul>";
 
         for (index in controls)
         {
@@ -252,7 +252,7 @@ function updateProjectControls(controls, elementID, label)
             contents += "<li> " + control + "</li>";
         }
 
-        contents += "</ui>";
+        contents += "</ul>";
         document.getElementById(elementID).innerHTML = contents;
     }
     else
@@ -265,7 +265,7 @@ function updateProjectControls(controls, elementID, label)
 function updateProjectScreenshots(name)
 {
     const elementID = "mainScreenshot";
-    const imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png"></img>';
+    const imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png" alt="A screenshot for the project" width="1280" height="720">';
     document.getElementById(elementID).innerHTML = imageElement;
 }
 
@@ -384,7 +384,7 @@ function getRecentProject(project)
 
     content = `<a href="project.html?project=${sanitizedName}">
                         <div class='imageOverlay'>
-                            <img src="${thumbnail}"/>
+                            <img src="${thumbnail}" alt="${sanitizedName}"/>
                             <div class='imageText'>
                                     <div class='imageTitle'>
                                         ${name}

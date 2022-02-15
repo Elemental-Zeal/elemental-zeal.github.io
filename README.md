@@ -10,8 +10,3 @@ Contact or follow us on [Twitter](https://twitter.com/ElementalZeal).
 5. Add thumbnail to art/thumbnail and ensure its name matches the project sanitized name.
 6. Add a folder matching the project sanitized name to art/screenshots
 7. Add screenshots to that folder and make sure they are named in the format of SS01.png
-
-# Todo
-- Move controls to be in a data/controls folder (?)
-- Redo motto (?)
-- Refactor

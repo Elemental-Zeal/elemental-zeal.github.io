@@ -28,12 +28,11 @@ function readProjectsJson()
     return projectsObject;
 }
 
-function readProjectInformation(list, name)
+function readProjectInformation(name)
 {
     var request = new XMLHttpRequest();
 
-    var jsonFile = "data/" + list + "/" + name +".json";
-    console.log("Reading from: " + jsonFile);
+    var jsonFile = "data/projects/" + name +".json";
 
     request.open("GET", jsonFile, false);
     request.setRequestHeader('Content-Type', 'application/json;charset=utf-8;');
@@ -68,7 +67,7 @@ function includeList(projectsObject, list, elementID)
         var name = project.name;
 
         var sanitizedName = project.sanitizedName;
-        var projectInformation = readProjectInformation(list, sanitizedName);
+        var projectInformation = readProjectInformation(sanitizedName);
 
         var releaseDate = "N/A"
         if (projectInformation.releaseDate)
@@ -176,7 +175,7 @@ function loadProjectPage()
 
             if (sanitizedName === projectName)
             {
-                projectInformation = readProjectInformation(key, sanitizedName);
+                projectInformation = readProjectInformation(sanitizedName);
                 found = true;
                 break;
             }

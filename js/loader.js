@@ -1,8 +1,6 @@
 function getParameterByName(name, url = window.location.href)
 {
-    // name = name.replace(/[\[\]]/g, '\\$&');
-    // var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(url);
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*))'), results = regex.exec(url);
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*))'), results = regex.exec(url);
 
     if (!results)
     {
@@ -13,7 +11,6 @@ function getParameterByName(name, url = window.location.href)
         return '';
     }
 
-    // return decodeURIComponent(results[2].replace(/\+/g, ' '));
     return decodeURIComponent(results[2]);
 }
 
@@ -30,9 +27,20 @@ function readProjectsJson()
 
 function readProjectInformation(name)
 {
-    var request = new XMLHttpRequest();
+    const jsonFile = "data/projects/" + name +".json";
 
-    var jsonFile = "data/projects/" + name +".json";
+    // fetch(jsonFile)
+    //     .then(function (response)
+    //     {
+    //         var projectObject = JSON.parse(response.body);
+    //         return projectObject;
+    //     })
+    //     .catch(function (err)
+    //     {
+    //         console.log("Could not load project json.", err);
+    //     });
+
+    var request = new XMLHttpRequest();
 
     request.open("GET", jsonFile, false);
     request.setRequestHeader('Content-Type', 'application/json;charset=utf-8;');
@@ -44,13 +52,11 @@ function readProjectInformation(name)
 
 function includeList(projectsObject, list, elementID)
 {
-    var content = "";
-
     var projectList = projectsObject[list];
-
     const numProjects = projectList.length;
 
     var floatDirection = "Left"
+    var content = "";
 
     for (var i = numProjects - 1; i >= 0; i--)
     {
@@ -63,11 +69,11 @@ function includeList(projectsObject, list, elementID)
             floatDirection = "Right";
         }
 
-        var project = projectList[i];
-        var name = project.name;
+        const project = projectList[i];
+        const name = project.name;
 
-        var sanitizedName = project.sanitizedName;
-        var projectInformation = readProjectInformation(sanitizedName);
+        const sanitizedName = project.sanitizedName;
+        const projectInformation = readProjectInformation(sanitizedName);
 
         var releaseDate = "N/A"
         if (projectInformation.releaseDate)
@@ -82,7 +88,7 @@ function includeList(projectsObject, list, elementID)
             description = descriptionFile;
         }
 
-        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
+        const thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
 
         content += `<div id = "${sanitizedName}" class = "Sec">
                         <div class = "GamesCell ${floatDirection}"
@@ -148,19 +154,16 @@ function includeFile(filename, elementID)
 
 function loadProjectPage()
 {
-    var projectName = getParameterByName('project');
-
+    const projectName = getParameterByName('project');
     var projectLists = readProjectsJson();
-
-    // const numLists = projectLists.length;
-
-    var projectInformation;
+    
     var found = false;
 
+    var projectInformation;
     var sanitizedName;
 
     Object.keys(projectLists).forEach(key => {
-        var projectList = projectLists[key];
+        const projectList = projectLists[key];
         const numProjects = projectList.length;
 
         for (var i = 0; i < numProjects; i++)
@@ -170,7 +173,7 @@ function loadProjectPage()
                 break;
             }
 
-            var project = projectList[i];
+            const project = projectList[i];
             sanitizedName = project.sanitizedName;
 
             if (sanitizedName === projectName)
@@ -178,10 +181,6 @@ function loadProjectPage()
                 projectInformation = readProjectInformation(sanitizedName);
                 found = true;
                 break;
-            }
-            else
-            {
-                console.log (sanitizedName + " did not equal " + projectName);
             }
         }
     });
@@ -192,12 +191,10 @@ function loadProjectPage()
     }
     else
     {
-        var title = projectInformation.title;
-        var description = getDescription(sanitizedName);
-        updatePageTitle(title);
-        updateProjectTitles(title);
+        updatePageTitle(projectInformation.title);
+        updateProjectTitles(projectInformation.title);
         updateProjectReleaseDate(projectInformation.releaseDate);
-        updateProjectDescription(description);
+        updateProjectDescription();
         updateProjectControls(projectInformation.controls, "projectControls", "Controls");
         updateProjectControls(projectInformation.mouseKeyboardControls, "mouseKeyboardControls", "Mouse/Keyboard Controls");
         updateProjectControls(projectInformation.controllerControls, "controllerControls", "Controller Controls");
@@ -216,13 +213,13 @@ function updateProjectTitles(name)
     var elementID = "projectTitleDiv";
     document.getElementById(elementID).innerHTML = name;
 
-    var elementID = "projectPageTitleDiv";
+    elementID = "projectPageTitleDiv";
     document.getElementById(elementID).innerHTML = name;
 }
 
 function updateProjectReleaseDate(date)
 {
-    var elementID = "projectReleaseDateDiv";
+    const elementID = "projectReleaseDateDiv";
 
     if (date)
     {
@@ -230,15 +227,16 @@ function updateProjectReleaseDate(date)
     }
     else
     {
-        var element = document.getElementById(elementID);
+        const element = document.getElementById(elementID);
         element.parentNode.removeChild(element);
     }
 }
 
-function updateProjectDescription(description)
+function updateProjectDescription()
 {
-    var elementID = "projectDescription";
+    const elementID = "projectDescription";
 
+    const description = getDescription(sanitizedName);
     if (description)
     {
         var contents = "<b>Description</b><br><br>";
@@ -248,7 +246,7 @@ function updateProjectDescription(description)
     }
     else
     {
-        var element = document.getElementById(elementID);
+        const element = document.getElementById(elementID);
         element.parentNode.removeChild(element);
     }
 }
@@ -277,20 +275,20 @@ function updateProjectControls(controls, elementID, label)
 
 function updateProjectScreenshots(name)
 {
-    var elementID = "mainScreenshot";
-    var imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png"></img>';
+    const elementID = "mainScreenshot";
+    const imageElement = '<img class="bigScreenshot" src="/art/screenshots/' + name + '/SS01.png"></img>';
     document.getElementById(elementID).innerHTML = imageElement;
 }
 
 function updateProjectButtons(ludumDareLink, itchioLink, playstoreLink)
 {
-    var elementID = "buttonBar";
+    const elementID = "buttonBar";
 
     var contents = "";
 
     if (ludumDareLink)
     {
-        contents = '<a href="' + ludumDareLink + '" class="action-button shadow animate Purple PlayPage">';
+        contents += '<a href="' + ludumDareLink + '" class="action-button shadow animate Purple PlayPage">';
         contents += 'Ludum Dare';
         contents += '</a>';
     }
@@ -314,40 +312,88 @@ function updateProjectButtons(ludumDareLink, itchioLink, playstoreLink)
 
 function loadHomePage()
 {
-    var projectsObject = readProjectsJson();
-    updateRecentGames(projectsObject);
-    updateRecentJams(projectsObject);
-    updateRecentPrototypes(projectsObject);
+    const projectLists = readProjectsJson();
+    updateRecentGames(projectLists);
+    updateRecentJams(projectLists);
+    updateRecentPrototypes(projectLists);
 }
 
-function updateRecentGames(projectsObject)
+function updateRecentGames(projectLists)
 {
-    var list = "games";
-    var projectList = projectsObject[list];
-    var listCount = projectList.length;
+    const list = "games";
+    const projectList = projectLists[list];
+    const listCount = projectList.length;
 
-    var elementID = "recentGames";
+    const elementID = "recentGames";
 
     var contents = "";
-    var count = 3;
+    const count = 3;
 
     for (var i = 1; i <= count; i++)
     {
-        var project = projectList[listCount - i];
-        var name = project.name;
+        const project = projectList[listCount - i];
+        contents += getRecentProject(project);
+    }
 
-        var sanitizedName = project.sanitizedName;
+    document.getElementById(elementID).innerHTML = contents;
+}
 
-        var description = "N/A"
-        var descriptionFile = getDescription(sanitizedName);
-        if (descriptionFile)
-        {
-            description = descriptionFile;
-        }
+function updateRecentJams(projectLists)
+{
+    const list = "jams";
+    const projectList = projectLists[list];
+    const listCount = projectList.length;
 
-        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
+    const elementID = "recentJams";
 
-        contents += `<a href="project.html?project=${sanitizedName}">
+    var contents = "";
+    const count = 3;
+
+    for (var i = 1; i <= count; i++)
+    {
+        const project = projectList[listCount - i];
+        contents += getRecentProject(project);
+    }
+
+    document.getElementById(elementID).innerHTML = contents;
+}
+
+function updateRecentPrototypes(projectLists)
+{
+    const list = "prototypes";
+    const projectList = projectLists[list];
+    const listCount = projectList.length;
+
+    const elementID = "recentPrototypes";
+
+    var contents = "";
+    const count = 3;
+
+    for (var i = 1; i <= count; i++)
+    {
+        const project = projectList[listCount - i];
+        contents += getRecentProject(project);
+    }
+
+    document.getElementById(elementID).innerHTML = contents;
+}
+
+function getRecentProject(project)
+{
+    const name = project.name;
+
+    const sanitizedName = project.sanitizedName;
+
+    var description = "N/A"
+    const descriptionFile = getDescription(sanitizedName);
+    if (descriptionFile)
+    {
+        description = descriptionFile;
+    }
+
+    const thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
+
+    content = `<a href="project.html?project=${sanitizedName}">
                         <div class='imageOverlay'>
                             <img src="${thumbnail}"/>
                             <div class='imageText'>
@@ -363,103 +409,5 @@ function updateRecentGames(projectsObject)
                             </div>
                         </div>
                     </a>`;
-    }
-
-    document.getElementById(elementID).innerHTML = contents;
-}
-
-function updateRecentJams(projectsObject)
-{
-    var list = "jams";
-    var projectList = projectsObject[list];
-    var listCount = projectList.length;
-
-    var elementID = "recentJams";
-
-    var contents = "";
-    var count = 3;
-
-    for (var i = 1; i <= count; i++)
-    {
-        var project = projectList[listCount - i];
-        var name = project.name;
-
-        var sanitizedName = project.sanitizedName;
-
-        var description = "N/A"
-        var descriptionFile = getDescription(sanitizedName);
-        if (descriptionFile)
-        {
-            description = descriptionFile;
-        }
-
-        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
-
-        contents += `<a href="project.html?project=${sanitizedName}">
-                        <div class='imageOverlay'>
-                            <img src="${thumbnail}"/>
-                            <div class='imageText'>
-                                    <div class='imageTitle'>
-                                        ${name}
-                                    </div>
-                                    <div class='imageDescription'>
-                                        ${description}
-                                    </div>
-                                    <div class='imageLink'>
-                                        Check It Out
-                                    </div>
-                            </div>
-                        </div>
-                    </a>`;		
-    }
-
-    document.getElementById(elementID).innerHTML = contents;
-}
-
-function updateRecentPrototypes(projectsObject)
-{
-    var list = "prototypes";
-    var projectList = projectsObject[list];
-    var listCount = projectList.length;
-
-    var elementID = "recentPrototypes";
-
-    var contents = "";
-    var count = 3;
-
-    for (var i = 1; i <= count; i++)
-    {
-        var project = projectList[listCount - i];
-        var name = project.name;
-
-        var sanitizedName = project.sanitizedName;
-
-        var description = "N/A"
-        var descriptionFile = getDescription(sanitizedName);
-        if (descriptionFile)
-        {
-            description = descriptionFile;
-        }
-
-        var thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
-
-        contents += `<a href="project.html?project=${sanitizedName}">
-                        <div class='imageOverlay'>
-                            <img src="${thumbnail}"/>
-                            <div class='imageText'>
-                                    <div class='imageTitle'>
-                                        ${name}
-                                    </div>
-                                    <div class='imageDescription'>
-                                        ${description}
-                                    </div>
-                                    <div class='imageLink'>
-                                        Check It Out
-                                    </div>
-                            </div>
-                        </div>
-                    </a>`;	
-    }
-
-    document.getElementById(elementID).innerHTML = contents;
+    return content;
 }

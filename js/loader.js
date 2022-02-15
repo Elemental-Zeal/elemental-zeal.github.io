@@ -29,17 +29,6 @@ function readProjectInformation(name)
 {
     const jsonFile = "data/projects/" + name +".json";
 
-    // fetch(jsonFile)
-    //     .then(function (response)
-    //     {
-    //         var projectObject = JSON.parse(response.body);
-    //         return projectObject;
-    //     })
-    //     .catch(function (err)
-    //     {
-    //         console.log("Could not load project json.", err);
-    //     });
-
     var request = new XMLHttpRequest();
 
     request.open("GET", jsonFile, false);
@@ -194,7 +183,7 @@ function loadProjectPage()
         updatePageTitle(projectInformation.title);
         updateProjectTitles(projectInformation.title);
         updateProjectReleaseDate(projectInformation.releaseDate);
-        updateProjectDescription();
+        updateProjectDescription(sanitizedName);
         updateProjectControls(projectInformation.controls, "projectControls", "Controls");
         updateProjectControls(projectInformation.mouseKeyboardControls, "mouseKeyboardControls", "Mouse/Keyboard Controls");
         updateProjectControls(projectInformation.controllerControls, "controllerControls", "Controller Controls");
@@ -232,7 +221,7 @@ function updateProjectReleaseDate(date)
     }
 }
 
-function updateProjectDescription()
+function updateProjectDescription(sanitizedName)
 {
     const elementID = "projectDescription";
 

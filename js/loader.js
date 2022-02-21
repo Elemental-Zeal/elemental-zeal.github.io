@@ -378,6 +378,7 @@ function getRecentProject(project)
     if (descriptionFile)
     {
         description = descriptionFile;
+        description = truncateDescription(description);
     }
 
     const thumbnail = "/art/thumbnail/" + sanitizedName + ".png"
@@ -399,4 +400,24 @@ function getRecentProject(project)
                         </div>
                     </a>`;
     return content;
+}
+
+function truncateDescription(description)
+{
+    const maxLength = 25; // number of words
+    const originalLength = description.length;
+
+    var truncatedDescription = description.split(' ').slice(0, maxLength).join(' ');
+    truncatedDescription += " . . . "
+    const newLength = truncatedDescription.length;
+
+    // Only truncate if the new length is shorter than the original length
+    if (newLength < originalLength)
+    {
+        return truncatedDescription;
+    }
+    else
+    {
+        return description;
+    }
 }

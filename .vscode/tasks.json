@@ -2,19 +2,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Start Site",
+            "label": "Start/Update Site",
             "type": "shell",
-            "command": "docker-compose up --build"
+            "command": "docker-compose up --build -d"
         },
         {
             "label": "Stop Site",
             "type": "shell",
             "command": "docker-compose down"
-        },
-        {
-            "label": "Update Site",
-            "type": "shell",
-            "command": "docker-compose down; docker-compose up --build"
         }
     ]
 }

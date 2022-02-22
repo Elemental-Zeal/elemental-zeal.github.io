@@ -1,10 +1,6 @@
 {
     "games": [
         {
-            "name": "Scuba Adventure",
-            "sanitizedName": "ScubaAdventure"
-        },
-        {
             "name": "Bridge Crosser",
             "sanitizedName": "BridgeCrosser"
         },
@@ -26,22 +22,6 @@
         }
     ],
     "jams": [
-        {
-            "name": "Evosmash",
-            "sanitizedName": "Evosmash"
-        },
-        {
-            "name": "Metal Minions",
-            "sanitizedName": "MetalMinions"
-        },
-        {
-            "name": "No Air Out Here",
-            "sanitizedName": "NoAirOutHere"
-        },
-        {
-            "name": "Fish Eyes",
-            "sanitizedName": "FishEyes"
-        },
         {
             "name": "Elemental Gravity",
             "sanitizedName": "ElementalGravity"
@@ -145,10 +125,6 @@
     ],
     "prototypes": [
         {
-            "name": "Archer Z",
-            "sanitizedName": "ArcherZ"
-        },
-        {
             "name": "Swarms",
             "sanitizedName": "Swarms"
         },
@@ -159,6 +135,38 @@
         {
             "name": "You Can Only Steer",
             "sanitizedName": "YouCanOnlySteer"
+        }
+    ],
+    "archive": [
+        {
+            "name": "Archer Z",
+            "sanitizedName": "ArcherZ",
+            "originalCategory": "prototypes"
+        },
+        {
+            "name": "Evosmash",
+            "sanitizedName": "Evosmash",
+            "originalCategory": "jams"
+        },
+        {
+            "name": "Metal Minions",
+            "sanitizedName": "MetalMinions",
+            "originalCategory": "jams"
+        },
+        {
+            "name": "No Air Out Here",
+            "sanitizedName": "NoAirOutHere",
+            "originalCategory": "jams"
+        },
+        {
+            "name": "Fish Eyes",
+            "sanitizedName": "FishEyes",
+            "originalCategory": "jams"
+        },
+        {
+            "name": "Scuba Adventure",
+            "sanitizedName": "ScubaAdventure",
+            "originalCategory": "games"
         }
     ]
 }

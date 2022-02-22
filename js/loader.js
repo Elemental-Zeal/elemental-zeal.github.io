@@ -84,7 +84,6 @@ function includeList(projectsObject, list, elementID)
                             <a href = "/project.html?project=${sanitizedName}">
                                 <img src = "${thumbnail}" alt = "${sanitizedName}" width=315 height=250/>
                             </a>
-                            <div class = "clear"></div>
                         </div>
                         <div class = "GameInfo">
 						    <div class = "Stack${floatDirection}">

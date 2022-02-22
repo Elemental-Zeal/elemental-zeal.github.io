@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Making games we'd like to play, and hoping you will too">
-    <meta name="keywords" content="Fun, Indie, Game, Games, Development, Elemental, Zeal">
+    <meta name="keywords" content="Fun, Indie, Game, Games, Development, Elemental, Zeal, Archive, Archived Games">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/projectList.css">
     <title>
-        Games - Elemental Zeal
+        Archive - Elemental Zeal
     </title>
     <script src="js/loader.js"></script>
     <script src="js/dates.js"></script>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="container">
-        <div id="gamesDiv">
+        <div id="archiveDiv">
         </div>
     </div>
 
@@ -38,7 +38,7 @@
         updateCurrentYear();
 
         var projectsObject = readProjectsJson();
-        includeList(projectsObject, "games", "gamesDiv")
+        includeList(projectsObject, "archive", "archiveDiv")
     </script>
 </body>
 <html>

@@ -10,6 +10,4 @@ Contact or follow us on [Twitter](https://twitter.com/ElementalZeal).
 5. Add thumbnail to art/thumbnail and ensure its name matches the project sanitized name.
 6. Add a folder matching the project sanitized name to art/screenshots
 7. Add screenshots to that folder and make sure they are named in the format of SS01.png
-
-# Todo
-1. Test everything
+8. Optional: Add thumbnails for those screenshots at 480x270 to the art/screenshotThumbnails folder within a folder matching the project sanitized name.

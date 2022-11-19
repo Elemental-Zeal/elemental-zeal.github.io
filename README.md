@@ -1,6 +1,6 @@
 ## Elemental Zeal
 Find our games on [Itch.io](https://elemental-zeal.itch.io/).
-Contact or follow us on [Twitter](https://twitter.com/ElementalZeal).
+Contact or follow us on [Mastodon](https://mastodon.gamedev.place/@elementalzeal).
 
 # Adding a Project
 1. Add the project to data/projects.json

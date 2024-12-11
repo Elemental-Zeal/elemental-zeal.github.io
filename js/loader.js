@@ -187,7 +187,7 @@ function loadProjectPage()
         updateProjectControls(projectInformation.mouseKeyboardControls, "mouseKeyboardControls", "Mouse/Keyboard Controls");
         updateProjectControls(projectInformation.controllerControls, "controllerControls", "Controller Controls");
         updateProjectScreenshots(projectName);
-        updateProjectButtons(projectInformation.ludumDare, projectInformation.itchio, projectInformation.playstore);
+        updateProjectButtons(projectInformation.ludumDare, projectInformation.itchio);
     }
 }
 
@@ -268,7 +268,7 @@ function updateProjectScreenshots(name)
     document.getElementById(elementID).innerHTML = imageElement;
 }
 
-function updateProjectButtons(ludumDareLink, itchioLink, playstoreLink)
+function updateProjectButtons(ludumDareLink, itchioLink)
 {
     const elementID = "buttonBar";
 
@@ -285,13 +285,6 @@ function updateProjectButtons(ludumDareLink, itchioLink, playstoreLink)
     {
         contents += '<a href="' + itchioLink + '" class="action-button shadow animate Pink PlayPage">';
         contents += 'Itch.io';
-        contents += '</a>';
-    }
-
-    if (playstoreLink)
-    {
-        contents += '<a href="' + playstoreLink + '" class="action-button shadow animate Blue PlayPage">';
-        contents += 'Google Play';
         contents += '</a>';
     }
 
